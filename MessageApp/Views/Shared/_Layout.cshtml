@@ -11,7 +11,12 @@
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="above-navbar"></div>
+        <div class="above-above-navbar"></div>
+        <div class="above-navbar">
+            <span class="circle">
+                @Html.ActionLink("Be Happy!", "Index", "Messages", new { area = "" }, new { @class = "brand-link" })
+            </span>
+        </div>
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -27,13 +32,10 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
-                <span class="circle">
-                    @Html.ActionLink("Be Happy!", "Index", "Messages")
-                </span>
-
             </div>
         </div>
     </div>
+    <div class="above-navbar"></div>
     <div class="container body-content">
         @RenderBody()
         <hr />
