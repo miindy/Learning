@@ -358,7 +358,7 @@ a {
     text-decoration: none;
 }
 
-brand-link {
+a.brand-link {
     color: #ffffff!important;
     text-decoration: none;
 }
