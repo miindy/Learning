@@ -1,0 +1,25 @@
+﻿.circle {
+    /*background: #C94668;
+    border-radius: 0.8em!important;
+    -moz-border-radius: 0.8em;
+    -webkit-border-radius: 0.8em!important;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 20pt;
+    line-height: 1.6em;
+    margin-right: 15px;
+    text-align: center;
+    width: 1.6em;*/
+    display: block;
+    height: 160px;
+    width: 160px;
+    line-height: 160px;
+    -moz-border-radius: 80px; /* or 50% */
+    border-radius: 80px; /* or 50% */
+    background-color: #C94668;
+    text-align: center;
+    font-size: 2em;
+    margin: auto;
+    color: #ffffff!important;
+}
