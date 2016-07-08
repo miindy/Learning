@@ -10,6 +10,7 @@
 
 </head>
 <body>
+
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="above-above-navbar"></div>
         <div class="above-navbar">
@@ -38,11 +39,27 @@
     <div class="above-navbar"></div>
     <div class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+        @*<hr />*@
+        @*<footer>*@
+        @*<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>*@
+        @*</footer>*@
+
     </div>
+    <div class="footer-topbar">
+    </div>
+    <div class="footer-bottombar">
+        <img class="footer-image" src="~/Img/footer-img.jpg" />
+        <span class="gray-circle gray-circle-left">
+            @Html.ActionLink("About", "About", "Home", new { area = "" }, new { @class = "footer-link" })
+        </span>
+        <span class="gray-circle gray-circle-middle">
+            @Html.ActionLink("Contact", "Contact", "Home", new { area = "" }, new { @class = "footer-link" })
+        </span>
+        <span class="gray-circle gray-circle-right">
+            @Html.ActionLink("Ratings", "Contact", "Home", new { area = "" }, new { @class = "footer-link" })
+        </span>
+    </div>
+
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")

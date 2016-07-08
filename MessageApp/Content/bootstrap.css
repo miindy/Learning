@@ -363,6 +363,12 @@ a.brand-link {
     text-decoration: none;
 }
 
+/*MindyAdded*/
+a.footer-link {
+    color: #ffffff!important;
+    text-decoration: none;
+}
+
     a:hover,
     a:focus {
         color: #2a6496;
